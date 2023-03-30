@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Header from './components/Header.js'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <Header />
+      <main>
+        <h2>Sobre Nós</h2>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+        Somos uma equipe dedicada à venda e montagem de churrasqueiras de alvenaria feitas em tijolos maciços e furados. Com anos de experiência no mercado, 
+        temos orgulho em oferecer aos nossos clientes produtos de alta qualidade e durabilidade.
+        Embora atualmente trabalhemos com vendas online, nossa história começou com uma loja física localizada na Rodovia Washigton Luiz. Depois de muitos 
+        anos atendendo clientes em nossa loja, decidimos nos especializar na venda online para região local. 
+        Nossa equipe de montagem é altamente qualificada e comprometida em garantir que sua churrasqueira seja instalada com segurança e precisão, além disso, nosso 
+        objetivo é proporcionar a você a melhor experiência possível de compra e uso de sua churrasqueira de tijolinho. 
+
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </main>
     </div>
   );
 }
+
+
 
 export default App;
