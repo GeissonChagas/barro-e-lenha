@@ -1,8 +1,16 @@
 
 import './App.css';
-import Header from './components/Header.js'
+import Header from './components/Header.js';
+import ServicosComponent from './components/ServicosComponent';
 
 function App() {
+
+  const items = [
+    { id: 1, image: 'https://example.com/image1.jpg', description: 'Descrição da imagem 1' },
+    { id: 2, image: 'https://example.com/image2.jpg', description: 'Descrição da imagem 2' },
+    { id: 3, image: 'https://example.com/image3.jpg', description: 'Descrição da imagem 3' },
+  ];
+
   return (
     <div className="App">
       <Header />
@@ -17,11 +25,13 @@ function App() {
         objetivo é proporcionar a você a melhor experiência possível de compra e uso de sua churrasqueira de tijolinho. 
 
         </p>
+        <div>
+          <h1>Nossos Serviços:</h1>
+          <ServicosComponent items={items} />
+        </div>
       </main>
     </div>
   );
 }
-
-
 
 export default App;
